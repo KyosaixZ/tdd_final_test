@@ -3,7 +3,8 @@ import pytest
 
 # test for input validation
 @pytest.mark.parametrize("input_number, expected_result", 
-[('string', 'Invalid input: Number of eggs must be a positive integer.'),
+[('#', 'Invalid input: Number of eggs must be a positive integer.'),
+ ('a', 'Invalid input: Number of eggs must be a positive integer.'),
  (-1, 'Invalid input: Number of eggs must be a positive integer.'), 
  (0, 'Invalid input: Number of eggs must be a positive integer.')])
 def test_input_validation(input_number, expected_result):
