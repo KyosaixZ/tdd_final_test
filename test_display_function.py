@@ -5,7 +5,7 @@ import pytest
 @pytest.mark.parametrize("input_number, expected_result", 
 [('string', 'Invalid input: Number of eggs must be a positive integer.'),
  (-1, 'Invalid input: Number of eggs must be a positive integer.'), 
- (0, 'The cost of 0 eggs is 0.00 baht')])
+ (0, 'Invalid input: Number of eggs must be a positive integer.')])
 def test_input_validation(input_number, expected_result):
     actual_result = calculate_egg_cost(input_number)
     assert expected_result == actual_result
