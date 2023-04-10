@@ -5,7 +5,7 @@ def get_num_eggs():
     while True:
         try:
             num_eggs = int(input("How many eggs would you like to buy? "))
-            if num_eggs < 0:
+            if num_eggs <= 0:
                 print("Invalid input: Number of eggs must be a positive integer.")
             else:
                 return num_eggs
