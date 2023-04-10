@@ -16,7 +16,7 @@ def process_egg_cost(num_eggs):
 
 def validate_input(num_eggs):
     # Input validation
-    if not isinstance(num_eggs, int) or num_eggs < 0:
+    if not isinstance(num_eggs, int) or num_eggs <= 0:
         return "Invalid input: Number of eggs must be a positive integer."
     return None
 
